@@ -1,0 +1,96 @@
+.filters {
+  background-color: rgb(139 217 224 / 42%);
+  width: 100%;
+}
+
+.form-filters {
+  padding: 10px;
+}
+
+input,
+select {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(243, 198, 239, 0.7);
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  .filters {
+    height: 16rem;
+  }
+
+  .form-filters {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 520px) {
+  .filters {
+    height: 8.5rem;
+  }
+
+  .form-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  input,
+  select {
+    padding: 12px;
+  }
+}
+
+.trash {
+  width: 28px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 8px 14px 10px;
+  background-color: rgba(216, 17, 67, 0.955);
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(216, 17, 67, 0.955);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(216, 17, 67, 0.955) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

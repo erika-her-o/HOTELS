@@ -1,0 +1,134 @@
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 14px;
+}
+
+span,
+p {
+  color: rgb(106 75 151 / 93%);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hotel-card h2 {
+  margin: auto 0 10px;
+}
+
+.hotel-card {
+  background-color: rgb(139 217 224 / 42%);
+  box-shadow: 30px 30px 30px 1px rgb(158, 138, 138);
+  border-radius: 10px;
+  margin: 33px;
+  width: 300px;
+}
+
+.hotel-img {
+  width: 100%;
+  border-radius: 12px 12px 0px 80px;
+}
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.date {
+  background-color: rgba(97, 124, 212, 0.759);
+  border-radius: 8px;
+  color: rgba(243, 239, 239, 0.941);
+  font-weight: bold;
+  margin: 5px 20px;
+  padding: 8px;
+}
+
+.text {
+  margin-top: 18px;
+  height: 90px;
+  padding: 2px 18px;
+  overflow-y: scroll;
+}
+
+.availability {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90px;
+  margin: 20px 10px;
+}
+
+.location,
+.beds {
+  display: inline-flex;
+  margin: 5px 14px;
+  background-color: rgb(218, 180, 215);
+  border-radius: 6px;
+}
+
+.icon {
+  background-color: rgba(97, 124, 212, 0.759);
+  width: 40px;
+  font-size: 18px;
+  color: rgba(243, 239, 239, 0.941);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.availability-details {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.5rem;
+}
+
+.icon-price {
+  background-color: rgba(97, 124, 212, 0.759);
+  width: 4.5rem;
+  border-radius: 6px;
+  color: rgba(245, 245, 245, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-dollar-sign {
+  margin: 0 0.15rem;
+  color: white;
+}
+.paint-price {
+  opacity: 0.4;
+}
+
+.btn-reverse {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 20px;
+}
+
+.reserve {
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(74, 225, 57);
+  height: 40px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.reserve:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  background-color: rgb(66, 94, 235);
+}
